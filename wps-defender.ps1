@@ -2,7 +2,6 @@ $Path = "$Env:LOCALAPPDATA\Kingsoft"
 
 Write-Host "WPS Bullshit defender started."
 
-Set-ExecutionPolicy RemoteSigned
 New-Item -ItemType Directory -Force -Path $Path
 Get-Acl C:\Windows | Set-Acl $Path
 
